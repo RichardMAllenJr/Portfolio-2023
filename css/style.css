@@ -1,0 +1,228 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Uncial+Antiqua&display=swap');
+
+/* Variables */
+:root {
+    --primary-color: #022109;
+    --secondary-color: #074447;
+
+}
+/* Overall */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../images/northern\ lightsbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+body.dark{
+    background-color: white;
+    color: black;
+}
+
+/* Typography */ 
+
+h1 {
+    font-size: 32px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 24px;
+    color: white;
+}
+
+h4 {
+font-size: 24px;
+}
+
+h5 {
+font-size: 20px;
+}
+
+p {
+
+}
+
+a {
+
+}
+
+
+/* Logo */
+#logo{
+    position: absolute;
+    margin-top: 20px;
+    left: 20px;
+    font-size: 32px;
+    font-family: sans-serif;
+    background-size: 50px;
+}
+
+/* Nav */
+#nav{
+position: fixed;
+top: 20px;
+right: 20px; 
+margin: 0;
+padding: 0;
+}
+
+#nav a {
+    color: white;
+}
+#nav li {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 40px;
+    line-height: 50px;
+}
+
+#nav li:hover {
+    color: white;
+    border-bottom: 3px dotted white;
+    transition-duration: 0.5s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Page Layout */
+.section {
+    min-height: 100vh;
+}
+
+.section img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+/* Hero Section */
+#hero{ 
+    padding: 40vh;
+}
+
+/* .gimmick {
+background-image: url(../images/treegreen.png);
+background-size: cover;
+position: absolute;
+height: 800px;
+width: 800px;
+top: calc(50vh - 400px);
+left: calc(50vw - 400px);
+animation-name: spin;
+animation-duration: 2s;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+from {transform: rotate(0deg) scale(1);}
+to {transform: rotate(360deg) scale(2);}
+} */
+
+
+#projectHero {
+    padding: 20vh;
+}
+
+#project {
+padding: 20vh;
+
+}
+
+/* Bio Section */
+
+#bio {
+    /* background-image: url('../images/bio-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+.caseStudy{ 
+    background-color: #3E1B31;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* CV Section */
+.cv {
+    margin-top: 20px;
+}
+/* Buttons */
+.waves-effect {
+background-color: var(--secondary-color);
+}
+
+/* Cards */
+.card{
+    border-radius: 20px 20px 20px 20px;
+}
+
+.card .card-image {
+    border-radius: 20px 20px 20px 20px;
+}
+
+.card .card-content {
+    color: black;
+}
+
+.student {
+background-color: white;
+border-radius: 20px;
+padding: 20px;
+width: 205px;
+height: 321px;
+}
+
+.student h4 {
+font-size: 20px;
+color: #298dff;
+}
+
+.student h5 {
+font-size: 24px;
+color: #000719;
+}
+
+.student .studentButton {
+    color: white;
+    display: flex;
+    width: 155px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+    background: #298DFF;
+    margin-left: 10px
+}
+
+.student img {
+    height:148px;
+    width: 148px;
+    border-radius: 148px;
+}
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
