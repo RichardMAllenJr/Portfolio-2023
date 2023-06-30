@@ -79,10 +79,31 @@ function toggleNav() {
     document.getElementById('navTrigger').classList.toggle('active');
 }
 
-function generateComets (number) {
-    //Generate Number of Comets in DOM
 
+function generateComets (number) {
+
+    //Generate Number of Comets in DOM
+    document.createElementById(comet)	
+
+    var divsize = ((Math.random()*100) + 50).toFixed();
+    var color = '#'+ Math.round(0xffffff * Math.random()).toString(16);
+    $newdiv = $('<div/>').css({
+        'width':divsize+'px',
+        'height':divsize+'px',
+        'background-color': color
+        
     //Position randomly
+    var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
+    var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
 
     //Activate CSS Animation randomly
+    $newdiv.css({
+        'position':'absolute',
+        'left':posx+'px',
+        'top':posy+'px',
+        'display':'none'
+    }).appendTo( 'body' ).fadeIn(100).delay(1000).fadeOut(500, function(){
+    $(this).remove();
+    makeDiv(); 
+    }); 
 }

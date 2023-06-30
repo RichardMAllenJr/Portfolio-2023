@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Uncial+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
 /* Variables */
 :root {
@@ -61,7 +62,7 @@ h5 {
 }
 
 p {
-
+    text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
 }
 
 a {
@@ -139,41 +140,111 @@ a {
 /* Hero Section */
 #hero{ 
     padding: 30vh;
-
     box-sizing: border-box;
 }
 
+/* .container {
+    color: #e5e5e5;
+    font-size: 2.26rem;
+    text-transform: uppercase;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animation {
+    height: 50px;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.animation>div>div {
+    padding: 0.25rem 0.75rem;
+    height: 2.81rem;
+    margin-bottom: 2.81rem;
+    display: inline-block;
+}
+
+.animation div:first-child {
+    animation: text-animation 8s infinite;
+}
+
+.first div {
+    background-color: #20a7d8;
+}
+
+.second div {
+    background-color: #CD921E;
+}
+
+.third div {
+    background-color: #c10528;
+}
+
+@keyframes text-animation {
+    0% {
+        margin-top: 0;
+    }
+
+    10% {
+        margin-top: 0;
+    }
+
+    20% {
+        margin-top: -5.62rem;
+    }
+
+    30% {
+        margin-top: -5.62rem;
+    }
+
+    40% {
+        margin-top: -11.24rem;
+    }
+
+    60% {
+        margin-top: -11.24rem;
+    }
+
+    70% {
+        margin-top: -5.62rem;
+    }
+
+    80% {
+        margin-top: -5.62rem;
+    }
+
+    90% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+} */
+
+
+
+
 .sky-container {
-    /* width: 500px;
-    height: 500px;
-    border-radius: 50%;
-     */
-    /* clip-path: circle(50% at 50% 50%); */
-    transform: rotateZ(-25deg);
+    transform: rotateZ(-30deg);
 
 }
 
-.border {
-    /* width: 500px;
-    height: 500px;
-    position: absolute;
-    border-radius: 50%;
-    box-shadow: 0 0 3px 2px #d6d6d6;
-    z-index: 100; */
-}
 
 .star {
     position: absolute;
     top: 50%;
     left: 50%;
     height: 2px;
-    background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
-    filter: drop-shadow(0 0 6px #699bff);
+    background: linear-gradient(-45deg, #fff, rgba(0, 0, 255, 0));
+    filter: drop-shadow(0 0 6px #fff);
     animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
 }
 
 .star::before, .star::after {
-    position: absoulte;
+    position: absolute;
     content: '';
     top: calc(50% - 1px);
     right: 0;
@@ -209,7 +280,7 @@ a {
 
 .star:nth-child(3) {
     top: calc(50% + 150px);
-    left: calc(60% - 300px);
+    left: calc(60% - 200px);
     animation-delay: 2000ms;
 }
 
@@ -235,6 +306,16 @@ a {
 
 .star:nth-child(5)::before, .star:nth-child(5)::after {
     animation-delay: 1500ms;
+}
+
+.star:nth-child(6) {
+    top: calc(50% + 200px);
+    left: calc(50% + 200px);
+    animation-delay: 22500ms;
+}
+
+.star:nth-child(6)::before, .star:nth-child(6)::after {
+    animation-delay: 22500ms;
 }
 
 /* Animations */
