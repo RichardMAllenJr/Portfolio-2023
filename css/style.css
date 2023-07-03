@@ -91,8 +91,6 @@ a {
 
 #navWrapper {
     position: fixed;
-    height: 100vh;
-    width: 100vw;
     background-color: rgba(0,0,0,0);
 }
 
@@ -139,97 +137,116 @@ a {
 
 /* Hero Section */
 #hero{ 
-    padding: 30vh;
-    box-sizing: border-box;
-}
-
-/* .container {
-    color: #e5e5e5;
-    font-size: 2.26rem;
-    text-transform: uppercase;
-    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+
 }
 
-.animation {
-    height: 50px;
+#hero h1{
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    white-space: nowrap;
     overflow: hidden;
-    margin-left: 1rem;
+    position: relative;
+    width: 1000px;
+
 }
 
-.animation>div>div {
-    padding: 0.25rem 0.75rem;
-    height: 2.81rem;
-    margin-bottom: 2.81rem;
-    display: inline-block;
+
+.h1 span {
+    font-size: 40px;
+    margin-left: 100px;
 }
 
-.animation div:first-child {
-    animation: text-animation 8s infinite;
+.message {
+    background-color: teal;
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 670px;
+    animation: openclose 5s ease-in-out infinite;
 }
 
-.first div {
-    background-color: #20a7d8;
-}
 
-.second div {
-    background-color: #CD921E;
-}
-
-.third div {
-    background-color: #c10528;
-}
-
-@keyframes text-animation {
+@keyframes openclose {
     0% {
-        margin-top: 0;
+    top: 0.2rem;
+    width: 0;
     }
-
-    10% {
-        margin-top: 0;
+    5% {
+    width: 0;
     }
-
-    20% {
-        margin-top: -5.62rem;
+    15% {
+    width: 650px;
     }
-
     30% {
-        margin-top: -5.62rem;
+    top: 0.2rem;
+    width: 650px;
     }
-
-    40% {
-        margin-top: -11.24rem;
+    33% {
+    top: 0.2rem;
+    width: 0;
     }
-
-    60% {
-        margin-top: -11.24rem;
+    35% {
+    top: 0.2rem;
+    width: 0;
     }
-
-    70% {
-        margin-top: -5.62rem;
+    38% {
+    top: -4.5rem;
     }
-
-    80% {
-        margin-top: -5.62rem;
+    48% {
+    top: -4.5rem;
+    width: 325px;
     }
-
-    90% {
-        margin-top: 0;
+    62% {
+    top: -4.5rem;
+    width: 325px;
     }
-
+    66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+    }
+    71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+    }
+    86% {
+    top: -9rem;
+    width: 200px;
+    }
+    95% {
+    top: -9rem;
+    width: 200px;
+    }
+    98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+    }
     100% {
-        margin-top: 0;
+    top: 0;
+    width: 0;
+    text-indent: 0;
     }
-} */
+}
 
 
 
 
 .sky-container {
     transform: rotateZ(-30deg);
-
+    z-index: auto;
 }
 
 
@@ -259,8 +276,8 @@ a {
 }
 
 .star:nth-child(1) {
-    top: calc(50% - 10px);
-    left: calc(0% - 200px);
+    top: calc(50% + 50px);
+    left: calc(0% - 50px);
     animation-delay: 650ms;
 }
 
@@ -269,8 +286,8 @@ a {
 }
 
 .star:nth-child(2) {
-    top: calc(50% - 20px);
-    left: calc(50% - 90px);
+    top: calc(50% + 200px);
+    left: calc(30% + 50px);
     animation-delay: 650ms;
 }
 
@@ -279,7 +296,7 @@ a {
 }
 
 .star:nth-child(3) {
-    top: calc(50% + 150px);
+    top: calc(50% + 350px);
     left: calc(60% - 200px);
     animation-delay: 2000ms;
 }
@@ -289,8 +306,8 @@ a {
 }
 
 .star:nth-child(4) {
-    top: calc(50% + 300px);
-    left: calc(50% - 350px);
+    top: calc(50% + 500px);
+    left: calc(100% - 500px);
     animation-delay: 4500ms;
 }
 
@@ -299,7 +316,7 @@ a {
 }
 
 .star:nth-child(5) {
-    top: calc(50% + 400px);
+    top: calc(50% + 600px);
     left: calc(50% - 50px);
     animation-delay: 1500ms;
 }
@@ -310,7 +327,7 @@ a {
 
 .star:nth-child(6) {
     top: calc(50% + 200px);
-    left: calc(50% + 200px);
+    left: calc(50% + 100px);
     animation-delay: 22500ms;
 }
 
@@ -318,7 +335,7 @@ a {
     animation-delay: 22500ms;
 }
 
-/* Animations */
+/* Star Animations */
 @keyframes tail{
     0% {
         width: 0;
@@ -351,17 +368,6 @@ a {
         transform: translateX(320px);
     }
 }
-
-/* .comet {
-    background-image: url("../images/noun-shooting-star-811325.svg");
-    height: 100px;
-    width: 100px;
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 50vh;
-    left: 50vw;
-    background-size: cover;
-} */
 
 
 .carrot {
@@ -483,6 +489,8 @@ width: 50%;
         z-index: -1;
         opacity: 0;
         transition-duration: 200ms;
+        height: 100vh;
+        width: 100vw;
     }
 
     #navWrapper.active {
