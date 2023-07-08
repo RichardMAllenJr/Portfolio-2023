@@ -75,8 +75,6 @@ a {
     position: fixed;
     top: 10px;
     left: 20px;
-    font-size: 32px;
-    font-family: sans-serif;
     background-size: 50px;
 }
 
@@ -172,8 +170,8 @@ a {
     position: absolute;
     padding-left: 0.5rem;
     top: 0.2rem;
-    left: 670px;
-    animation: openclose 5s ease-in-out infinite;
+    left: 655px;
+    animation: openclose 8s ease-in-out infinite;
 }
 
 
@@ -186,11 +184,11 @@ a {
     width: 0;
     }
     15% {
-    width: 650px;
+    width: 380px;
     }
     30% {
     top: 0.2rem;
-    width: 650px;
+    width: 380px;
     }
     33% {
     top: 0.2rem;
@@ -205,11 +203,11 @@ a {
     }
     48% {
     top: -4.5rem;
-    width: 325px;
+    width: 300px;
     }
     62% {
     top: -4.5rem;
-    width: 325px;
+    width: 300px;
     }
     66% {
     top: -4.5rem;
@@ -223,11 +221,11 @@ a {
     }
     86% {
     top: -9rem;
-    width: 200px;
+    width: 175px;
     }
     95% {
     top: -9rem;
-    width: 200px;
+    width: 175px;
     }
     98% {
     top: -9rem;
@@ -243,7 +241,7 @@ a {
 
 
 
-
+/* Shooting Stars Animation */
 .sky-container {
     transform: rotateZ(-30deg);
     z-index: auto;
@@ -277,7 +275,7 @@ a {
 
 .star:nth-child(1) {
     top: calc(50% + 50px);
-    left: calc(0% - 50px);
+    left: calc(50% - 50px);
     animation-delay: 650ms;
 }
 
@@ -307,7 +305,7 @@ a {
 
 .star:nth-child(4) {
     top: calc(50% + 500px);
-    left: calc(100% - 500px);
+    left: calc(50% - 500px);
     animation-delay: 4500ms;
 }
 
@@ -316,13 +314,13 @@ a {
 }
 
 .star:nth-child(5) {
-    top: calc(50% + 600px);
-    left: calc(50% - 50px);
-    animation-delay: 1500ms;
+    top: calc(50% + 244px);
+    left: calc(50% - 924px);
+    animation-delay: 500ms;
 }
 
 .star:nth-child(5)::before, .star:nth-child(5)::after {
-    animation-delay: 1500ms;
+    animation-delay: 500ms;
 }
 
 .star:nth-child(6) {
@@ -468,6 +466,90 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 width: 50%;
+}
+
+
+/*Project 1*/
+#hermesNav{
+    position: fixed;
+    top: 20px;
+    right: 20px; 
+    margin: 0;
+    padding: 0;
+}
+
+#hermesNav a {
+    color: white;
+    font-size: 20px;
+}
+#hermesNav li {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 40px;
+    line-height: 50px;
+}
+
+
+#hermesHero {
+    background-image: url(../images/projectassets/project1/HermesPhoneHero.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 40vh;
+}
+
+/*Project 2*/
+#blsNav{
+    position: fixed;
+    top: 20px;
+    right: 20px; 
+    margin: 0;
+    padding: 0;
+}
+
+#blsNav a {
+    color: white;
+    font-size: 20px;
+}
+#blsNav li {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 40px;
+    line-height: 50px;
+}
+
+#blsHero {
+    background-image: url(../images/projectassets/project2/blshero.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 40vh;
+}
+
+/*Project 3*/
+#ppNav{
+    position: fixed;
+    top: 20px;
+    right: 20px; 
+    margin: 0;
+    padding: 0;
+}
+
+#ppNav a {
+    color: white;
+    font-size: 20px;
+}
+#ppNav li {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 40px;
+    line-height: 50px;
+}
+
+#ppHero {
+    background-image: url(../images/projectassets/project3/peacepalmhero.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 40vh;
+    color: white;
 }
 
 /* Change look / feel for smaller screen sizes */
