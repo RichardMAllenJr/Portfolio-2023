@@ -74,6 +74,7 @@
     <!-- Portfolio Section -->
     <div id="portfolio" class="section col s12 m12 l12">
         <h1 class="center-align">Portfolio</h1>
+        <h2 class="center-align">UX Projects</h2>
         <div class="container">
             <div class="row">
                 <div class="col s12 m6 l6">
@@ -144,7 +145,7 @@
                         of UX design.</p>
                 </div>
                 <div class="col s12 m6 l6">
-                        <img src="images/bio pic.jpeg"/>
+                        <img class="materialboxed" src="images/bio pic.jpeg"/>
                 </div>
             </div>
         </div>
@@ -241,9 +242,11 @@
                     <p></p>
                     <p>Thank you for checking out my portfolio!</p>
                     <p>I am currently looking to connect and expand on the possibilities of design solutions.</p>
-                    <p>Feel free to reach me at: richardmallenjr1@gmail.com</p>
+                    <p>Feel free to reach me at: </p>
                 <ul></ul>
-                <a id="buttonColor" class="waves-effect waves-light btn" onclick="M.toast({html: 'Copied Email Address'})">Copy Email to Clipboard</a>                </div>
+                <input type="text" value="richardmallenjr1@gmail.com" id="myInput">
+                <button id="copyButton" onclick="myFunction()">Copy text</button>
+            </div>
             </div>
         </div>
     </div>
