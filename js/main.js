@@ -40,10 +40,6 @@ function createButton(){
     document.getElementById("Contact").appendChild(newButton);
 }
 
-//Toast Notification
-M.toast({html: 'I am a toast!'})
-
-
 //Toggle Hamburger Menu Nav
 function toggleNav() {
     document.getElementById('navWrapper').classList.toggle('active');
@@ -79,7 +75,7 @@ function generateCometsById (number) {
 }
 
 //Copy to Clipboard Button
-function myFunction() {
+function copyText() {
     // Get the text field
     var copyText = document.getElementById("myInput");
     // Select the text field
